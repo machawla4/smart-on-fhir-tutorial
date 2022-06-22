@@ -10,7 +10,7 @@
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
-        var readPatientBanner = smart.need_patient_banner;
+        var needPatientBanner = smart.need_patient_banner;
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
                     type: 'Observation',
